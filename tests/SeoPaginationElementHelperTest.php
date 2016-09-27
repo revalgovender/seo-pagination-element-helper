@@ -33,7 +33,9 @@ class SeoPaginationElementHelperTest extends PHPUnit_Framework_TestCase
 
     public function testBuildNextElement()
     {
-        $lengthAwarePaginator = $this->setupData('\data\paginatorResultSetPageOne.json');
+        define('DS', DIRECTORY_SEPARATOR);
+
+        $lengthAwarePaginator = $this->setupData(DS .'data'. DS . 'paginatorResultSetPageOne.json');
         $seoPaginatorElementHelper = new SeoPaginationElementHelper($lengthAwarePaginator);
 
         // Expected values.
@@ -49,7 +51,9 @@ class SeoPaginationElementHelperTest extends PHPUnit_Framework_TestCase
 
     public function testBuildPreviousElement()
     {
-        $lengthAwarePaginator = $this->setupData('\data\paginatorResultSetPageFive.json');
+        define('DS', DIRECTORY_SEPARATOR);
+
+        $lengthAwarePaginator = $this->setupData(DS . 'data' . DS . 'paginatorResultSetPageFive.json');
         $seoPaginatorElementHelper = new SeoPaginationElementHelper($lengthAwarePaginator);
 
         // Expected values.
@@ -66,7 +70,8 @@ class SeoPaginationElementHelperTest extends PHPUnit_Framework_TestCase
     public function testGenerateHtml()
     {
         // Given.
-        $lengthAwarePaginator = $this->setupData('\data\paginatorResultSetPageFive.json');
+        define('DS', DIRECTORY_SEPARATOR);
+        $lengthAwarePaginator = $this->setupData(DS . 'data'. DS . 'paginatorResultSetPageFive.json');
         $seoPaginatorElementHelper = new SeoPaginationElementHelper($lengthAwarePaginator);
         $rel = 'prev';
         $href = "http://local.laravel-seo-pagination-helper.co.uk/blog/articles?page=4";
@@ -85,7 +90,8 @@ class SeoPaginationElementHelperTest extends PHPUnit_Framework_TestCase
     public function testGetElementsForPageFive()
     {
         // Given.
-        $lengthAwarePaginator = $this->setupData('\data\paginatorResultSetPageFive.json');
+        define('DS', DIRECTORY_SEPARATOR);
+        $lengthAwarePaginator = $this->setupData(DS . 'data' . DS . 'paginatorResultSetPageFive.json');
         $seoPaginatorElementHelper = new SeoPaginationElementHelper($lengthAwarePaginator);
 
         // Actions.
@@ -104,7 +110,8 @@ class SeoPaginationElementHelperTest extends PHPUnit_Framework_TestCase
 
     public function testGetElementsForPageOne()
     {
-        $lengthAwarePaginator = $this->setupData('\data\paginatorResultSetPageOne.json');
+        define('DS', DIRECTORY_SEPARATOR);
+        $lengthAwarePaginator = $this->setupData(DS . 'data' . DS . 'paginatorResultSetPageOne.json');
         $seoPaginatorElementHelper = new SeoPaginationElementHelper($lengthAwarePaginator);
 
         // Actions.
@@ -122,7 +129,8 @@ class SeoPaginationElementHelperTest extends PHPUnit_Framework_TestCase
 
     public function testGetElementsForPageOneWithTwoEntriesOnly()
     {
-        $lengthAwarePaginator = $this->setupData('\data\paginatorResultSetPageOneWithTwoEntries.json');
+        define('DS', DIRECTORY_SEPARATOR);
+        $lengthAwarePaginator = $this->setupData(DS . 'data' . DS . 'paginatorResultSetPageOneWithTwoEntries.json');
         $seoPaginatorElementHelper = new SeoPaginationElementHelper($lengthAwarePaginator);
 
         // Actions.
@@ -138,7 +146,8 @@ class SeoPaginationElementHelperTest extends PHPUnit_Framework_TestCase
 
     public function testGetElementsForTheLastPage()
     {
-        $lengthAwarePaginator = $this->setupData('\data\paginatorResultSetPageSeven.json');
+        define('DS', DIRECTORY_SEPARATOR);
+        $lengthAwarePaginator = $this->setupData(DS . 'data' . DS . 'paginatorResultSetPageSeven.json');
         $seoPaginatorElementHelper = new SeoPaginationElementHelper($lengthAwarePaginator);
 
         // Actions.
