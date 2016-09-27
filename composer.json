@@ -1,0 +1,26 @@
+{
+    "name": "revalgovender/seo-pagination-element-helper",
+    "description": "This Laravel class generates HTML link elements rel=”next” and rel=”prev” to indicate the relationship between component URLs in a paginated series.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Reval Govender",
+            "email": "reval.govende23@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Revalgovender\\SeoPaginationElementHelper\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}

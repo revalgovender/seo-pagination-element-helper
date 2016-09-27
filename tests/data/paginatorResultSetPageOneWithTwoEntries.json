@@ -1,0 +1,26 @@
+{
+  "total": 2,
+  "per_page": 15,
+  "current_page": 1,
+  "last_page": 1,
+  "next_page_url": null,
+  "prev_page_url": null,
+  "from": 1,
+  "to": 2,
+  "data": [
+    {
+      "id": 1,
+      "title": "Eaque qui laborum sequi error harum est qui.",
+      "content": "Est ducimus quisquam in illum odit consequatur eius. Nulla et omnis voluptatum aut omnis. Omnis iste aperiam et ut neque maiores.Porro non saepe ex provident. Quia optio dignissimos quod rerum qui. Consequatur commodi quod et cum quia dignissimos aut.Earum non dicta similique. Quod reprehenderit consectetur aspernatur aliquid sed ipsa illum. A nam esse eius.Nisi deleniti quo sunt veritatis. Et porro sunt mollitia et pariatur ab ipsa. Rerum error dignissimos occaecati. Qui et magnam corporis aut.Ut veniam perferendis est in vel perspiciatis rerum sed. Ut voluptate commodi esse non repellendus vitae eos. Et consectetur dolorem magnam nihil vitae.",
+      "created_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 2,
+      "title": "Voluptate saepe non voluptatum sapiente.",
+      "content": "Quam ex quasi ut quibusdam excepturi. Modi aut qui est eligendi id sed. Ut minus nobis eius ea eos.Rerum amet quibusdam consequatur provident. Dolore expedita dolore error repellendus consequatur sed. Rerum sit molestiae dolorum aliquam illum recusandae. Accusantium sapiente voluptatem excepturi.Quia nam eius repellat alias incidunt similique. Consequatur esse et recusandae. Dolorem placeat fugiat reiciendis autem quasi. Eveniet neque pariatur perspiciatis possimus blanditiis minus. Assumenda minus aut dignissimos.Odio aspernatur dolorum ullam placeat. Labore qui nostrum sapiente enim sequi maxime sunt. Eum in delectus et sed accusamus molestiae.Nisi ex eum id reprehenderit voluptatem accusamus. Dolorum aliquid occaecati provident nisi. Sit aliquid perspiciatis facere est temporibus libero quia.",
+      "created_at": null,
+      "updated_at": null
+    }
+  ]
+}
