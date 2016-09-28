@@ -8,6 +8,8 @@ use Revalgovender\SeoPaginationElementHelper\SeoPaginationElementHelper;
 
 class SeoPaginationElementHelperTest extends PHPUnit_Framework_TestCase
 {
+    const DS = DIRECTORY_SEPARATOR;
+
     /**
      * Setup LengthAwarePaginator object for tests
      *
@@ -33,9 +35,7 @@ class SeoPaginationElementHelperTest extends PHPUnit_Framework_TestCase
 
     public function testBuildNextElement()
     {
-        define('DS', DIRECTORY_SEPARATOR);
-
-        $lengthAwarePaginator = $this->setupData(DS .'data'. DS . 'paginatorResultSetPageOne.json');
+        $lengthAwarePaginator = $this->setupData(self::DS .'data'. self::DS . 'paginatorResultSetPageOne.json');
         $seoPaginatorElementHelper = new SeoPaginationElementHelper($lengthAwarePaginator);
 
         // Expected values.
@@ -51,9 +51,7 @@ class SeoPaginationElementHelperTest extends PHPUnit_Framework_TestCase
 
     public function testBuildPreviousElement()
     {
-        define('DS', DIRECTORY_SEPARATOR);
-
-        $lengthAwarePaginator = $this->setupData(DS . 'data' . DS . 'paginatorResultSetPageFive.json');
+        $lengthAwarePaginator = $this->setupData(self::DS . 'data' . self::DS . 'paginatorResultSetPageFive.json');
         $seoPaginatorElementHelper = new SeoPaginationElementHelper($lengthAwarePaginator);
 
         // Expected values.
@@ -70,8 +68,7 @@ class SeoPaginationElementHelperTest extends PHPUnit_Framework_TestCase
     public function testGenerateHtml()
     {
         // Given.
-        define('DS', DIRECTORY_SEPARATOR);
-        $lengthAwarePaginator = $this->setupData(DS . 'data'. DS . 'paginatorResultSetPageFive.json');
+        $lengthAwarePaginator = $this->setupData(self::DS . 'data'. self::DS . 'paginatorResultSetPageFive.json');
         $seoPaginatorElementHelper = new SeoPaginationElementHelper($lengthAwarePaginator);
         $rel = 'prev';
         $href = "http://local.laravel-seo-pagination-helper.co.uk/blog/articles?page=4";
@@ -90,8 +87,7 @@ class SeoPaginationElementHelperTest extends PHPUnit_Framework_TestCase
     public function testGetElementsForPageFive()
     {
         // Given.
-        define('DS', DIRECTORY_SEPARATOR);
-        $lengthAwarePaginator = $this->setupData(DS . 'data' . DS . 'paginatorResultSetPageFive.json');
+        $lengthAwarePaginator = $this->setupData(self::DS . 'data' . self::DS . 'paginatorResultSetPageFive.json');
         $seoPaginatorElementHelper = new SeoPaginationElementHelper($lengthAwarePaginator);
 
         // Actions.
@@ -110,8 +106,7 @@ class SeoPaginationElementHelperTest extends PHPUnit_Framework_TestCase
 
     public function testGetElementsForPageOne()
     {
-        define('DS', DIRECTORY_SEPARATOR);
-        $lengthAwarePaginator = $this->setupData(DS . 'data' . DS . 'paginatorResultSetPageOne.json');
+        $lengthAwarePaginator = $this->setupData(self::DS . 'data' . self::DS . 'paginatorResultSetPageOne.json');
         $seoPaginatorElementHelper = new SeoPaginationElementHelper($lengthAwarePaginator);
 
         // Actions.
@@ -129,8 +124,7 @@ class SeoPaginationElementHelperTest extends PHPUnit_Framework_TestCase
 
     public function testGetElementsForPageOneWithTwoEntriesOnly()
     {
-        define('DS', DIRECTORY_SEPARATOR);
-        $lengthAwarePaginator = $this->setupData(DS . 'data' . DS . 'paginatorResultSetPageOneWithTwoEntries.json');
+        $lengthAwarePaginator = $this->setupData(self::DS . 'data' . self::DS . 'paginatorResultSetPageOneWithTwoEntries.json');
         $seoPaginatorElementHelper = new SeoPaginationElementHelper($lengthAwarePaginator);
 
         // Actions.
@@ -146,8 +140,7 @@ class SeoPaginationElementHelperTest extends PHPUnit_Framework_TestCase
 
     public function testGetElementsForTheLastPage()
     {
-        define('DS', DIRECTORY_SEPARATOR);
-        $lengthAwarePaginator = $this->setupData(DS . 'data' . DS . 'paginatorResultSetPageSeven.json');
+        $lengthAwarePaginator = $this->setupData(self::DS . 'data' . self::DS . 'paginatorResultSetPageSeven.json');
         $seoPaginatorElementHelper = new SeoPaginationElementHelper($lengthAwarePaginator);
 
         // Actions.
