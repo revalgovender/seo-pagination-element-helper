@@ -1,4 +1,4 @@
-https://travis-ci.org/revalgovender/seo-pagination-element-helper.svg?branch=master
+[![Build Status](https://travis-ci.org/revalgovender/seo-pagination-element-helper.svg?branch=master)](https://travis-ci.org/revalgovender/seo-pagination-element-helper)
 
 #Seo Pagination Element Helper For Laravel 5+
 
