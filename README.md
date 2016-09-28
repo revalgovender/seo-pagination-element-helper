@@ -1,3 +1,5 @@
+https://travis-ci.org/revalgovender/seo-pagination-element-helper.svg?branch=master
+
 #Seo Pagination Element Helper For Laravel 5+
 
 This class generates HTML link elements rel=”next” and rel=”prev” to indicate the relationship between component URLs
