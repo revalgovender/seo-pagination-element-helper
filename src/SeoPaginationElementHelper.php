@@ -89,7 +89,7 @@ class SeoPaginationElementHelper
      */
     public function getElements() : array
     {
-        if ($this->getPaginator()->onFirstPage() == true && !$this->getPaginator()->hasMorePages()) {
+        if ($this->getPaginator()->onFirstPage() === true && !$this->getPaginator()->hasMorePages()) {
             return [];
         }
 
