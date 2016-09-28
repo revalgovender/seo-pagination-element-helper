@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/revalgovender/seo-pagination-element-helper.svg?branch=master)](https://travis-ci.org/revalgovender/seo-pagination-element-helper)
 [![Code Climate](https://codeclimate.com/github/revalgovender/seo-pagination-element-helper/badges/gpa.svg)](https://codeclimate.com/github/revalgovender/seo-pagination-element-helper)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/fc746dda-82a3-4960-9036-b0618324b4c5/mini.png)](https://insight.sensiolabs.com/projects/fc746dda-82a3-4960-9036-b0618324b4c5)
 
 #Seo Pagination Element Helper For Laravel 5+
 
